@@ -1,0 +1,159 @@
+/* 
+  Ravi Suthar - Data Analyst Portfolio 
+  Responsive Stylesheet
+*/
+
+/* Breaks: Tablet (max 1199px), Mobile (max 768px) */
+
+@media screen and (max-width: 1199px) {
+    .hero-name {
+        font-size: 3.5rem;
+    }
+
+    .timeline::before {
+        left: 40px;
+    }
+
+    /* Adjust timeline if needed layout shifts */
+}
+
+@media screen and (max-width: 992px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-top: 40px;
+    }
+
+    .hero-bio {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* About Section */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* Education */
+    .edu-grid {
+        flex-direction: column;
+    }
+
+    /* Timeline becomes single column */
+    .timeline-line {
+        left: 40px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 20px;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .timeline-dot {
+        left: 31px;
+        /* Center on line */
+        right: auto;
+    }
+
+    .right-item {
+        float: none;
+        margin-top: 0;
+    }
+
+    .left-item {
+        float: none;
+    }
+
+    .left-item .experience-card:hover,
+    .right-item .experience-card:hover {
+        transform: translateX(10px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --section-padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-name {
+        font-size: 2.8rem;
+    }
+
+    .hero-role {
+        font-size: 1.1rem;
+        white-space: normal;
+        /* wrap text */
+        animation: none;
+        border: none;
+        justify-content: center;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+        margin: 5px;
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-header-row {
+        flex-direction: column;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Impact */
+    .impact-stats {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .impact-cards {
+        flex-direction: column;
+    }
+
+    /* Hide cursor on mobile */
+    .cursor-dot,
+    .cursor-outline {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-image-container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero-name {
+        font-size: 2.2rem;
+    }
+
+    .skill-card {
+        padding: 20px;
+    }
+}
